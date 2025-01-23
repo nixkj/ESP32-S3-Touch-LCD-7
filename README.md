@@ -9,7 +9,7 @@ cd lvgl_micropython
 # Modify `builder/esp32.py` to include '3.13' in `ver`, since homebrew is already on Python 3.13.  lvgl-micropython builds successfully with the newer Python.
 sed -i -- "s/'3.11', '3.12'/'3.11', '3.12', '3.13'/g" builder/esp32.py
 # Build lvgl_micropython
-python3.13 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY=rgb_display INDEV=gt911
+python3 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY=rgb_display INDEV=gt911
 # Then use one of the suggested commands to flash - change [port] as appropriate.
 ~/.espressif/python_env/idf5.2_py3.13_env/bin/python -m esptool --chip esp32s3 -p [port] -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m --erase-all 0x0 build/lvgl_micropy_ESP32_GENERIC_S3-SPIRAM_OCT-8.bin
 ```
