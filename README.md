@@ -1,6 +1,8 @@
 # ESP32-S3-Touch-LCD-7
 Getting LVGL MicroPython going on the Waveshare ESP32-S3 Touch LCD 7". Tested on Homebrew 4.4.17 and Ubuntu 24.04.1.
 
+![basicdisplay](basicdisplay.png)
+
 # Building
 ```bash
 # Clone the repo
