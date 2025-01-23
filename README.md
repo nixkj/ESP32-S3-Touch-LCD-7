@@ -14,6 +14,10 @@ python3 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY=rg
 ~/.espressif/python_env/idf5.2_py3.13_env/bin/python -m esptool --chip esp32s3 -p (PORT) -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m --erase-all 0x0 build/lvgl_micropy_ESP32_GENERIC_S3-SPIRAM_OCT-8.bin
 ```
 
+# Notes
+- Although time and data consuming, it is often best to start with a completely fresh copy of the lvgl_micropython repository.
+- Must drive the display at 13 MHz and not 16 Mhz.
+
 # Useful resources
 
 - Waveshare Wiki for the ESP32-S3 Touch LCD 7": https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-7
