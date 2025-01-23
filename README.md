@@ -23,3 +23,6 @@ python3.13 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY
 - Some insight into getting the settings right (e.g. frequency 13 MHz, not 16 MHz, using the GT911 touch sensor, etc)
   - [Glitchy double-buffered display updates ESP32-S3 w/RGB ST7262 LCD](https://github.com/lvgl-micropython/lvgl_micropython/issues/33)
   - [RGBDisplay frame buffer allocation failure on ESP32-S3](https://github.com/lvgl-micropython/lvgl_micropython/issues/20)
+- Datasheets:
+  - [ST7262 Datasheet](https://files.waveshare.com/wiki/ESP32-S3-Touch-LCD-4.3/ST7262.pdf)
+  - [GT911](https://files.waveshare.com/upload/e/eb/GT911.pdf)  
