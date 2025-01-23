@@ -16,7 +16,7 @@ python3 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY=rg
 
 # Notes
 - Although time and data consuming, it is often best to start with a completely fresh copy of the lvgl_micropython repository.
-- Must drive the display at 13 MHz and not 16 Mhz.
+- It is necessary to drive the display at 13 MHz and not 16 Mhz.
 
 # Useful resources
 
