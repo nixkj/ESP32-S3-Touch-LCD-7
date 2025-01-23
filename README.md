@@ -10,8 +10,8 @@ cd lvgl_micropython
 sed -i -- "s/'3.11', '3.12'/'3.11', '3.12', '3.13'/g" builder/esp32.py
 # Build lvgl_micropython
 python3 make.py esp32 BOARD=ESP32_GENERIC_S3 BOARD_VARIANT=SPIRAM_OCT DISPLAY=rgb_display INDEV=gt911
-# Then use one of the suggested commands to flash - change (PORT) as appropriate.
-~/.espressif/python_env/idf5.2_py3.13_env/bin/python -m esptool --chip esp32s3 -p (PORT) -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m --erase-all 0x0 build/lvgl_micropy_ESP32_GENERIC_S3-SPIRAM_OCT-8.bin
+# Then use one of the suggested commands to flash - will need to modify the idf and py versions and also change (PORT) as appropriate.
+~/.espressif/python_env/(idf5.2_py3.13_env)/bin/python -m esptool --chip esp32s3 -p (PORT) -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m --erase-all 0x0 build/lvgl_micropy_ESP32_GENERIC_S3-SPIRAM_OCT-8.bin
 ```
 
 # Notes
