@@ -1,9 +1,7 @@
 # basicdisplay.py
-#
-# Basic example of using Waveshare ESP32-S3 Touch LCD 7" with LVGL MicroPython
+#   Basic example of using Waveshare ESP32-S3 Touch LCD 7" with LVGL MicroPython
 #
 # Note: must use 13 MHz clock frequency, 16 MHz causes horizontal scrolling
-#
 
 # Libraries
 import lcd_bus, rgb_display, lvgl as lv
